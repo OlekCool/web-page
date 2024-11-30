@@ -1,0 +1,129 @@
+.container {
+    padding: 5px;
+    background-color: rgb(170, 255, 227);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    min-height: 576px;
+}
+
+.left-column {
+    min-width: 40%;
+    background-color: aquamarine;
+    border: 2px solid blue;
+    margin: 5px;
+    padding: 10px;
+}
+
+.right-column {
+    min-width: 55%;
+    background-color: aquamarine;
+    border: 2px solid blue;
+    margin: 5px;
+    padding: 10px;
+}
+
+/* content-left */ 
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 28px 0px;
+    height: 40%;
+}
+
+.image-container .image {
+    width: 220px;
+}
+
+.main-data, .extra-data {
+    padding: 2px 100px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.main-data > div, .extra-data > div {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+.main-data > div > input, .extra-data > div > input {
+    min-width: 40px;
+}
+
+/* Right Column Layout */
+.element-error {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+.options-country {
+    width: 180px;
+}
+
+.buttons-edit {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+    button {
+        width: 100px;
+    }
+}
+
+.container-rightcol {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
+    padding: 10px;
+}
+
+.left-pidcolumn, .right-pidcolumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-pidcolumn input, .left-pidcolumn option, .right-pidcolumn input, .left-pidcolumn select {
+    margin-left: 20px;
+    flex: 1;
+}
+
+.left-pidcolumn, .right-pidcolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-pidcolumn > div, .right-pidcolumn > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.left-pidcolumn label, .right-pidcolumn label {
+    flex: 0 0 auto;
+    text-align: left;
+    width: 130px;
+}
+
+.element-resume {
+    margin: 20px 20px 100px 20px;
+}
+
+.left-pidcolumn input, .left-pidcolumn select, .right-pidcolumn input, .right-pidcolumn select {
+    width: 100px;
+}
