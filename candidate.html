@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
     <title>Мій профіль</title>
     <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8"
 </head>
 <body>
-    <div class="container">
-        <div class="left-column">
-            <div class="buttons">
+    <main class="container">
+        <section class="left-column">
+            <nav class="buttons-navig">
                 <button>Вийти з профілю</button>
                 <button>Мої вакансії</button>
-            </div>
+            </nav>
 
-            <div class="image-container">
+            <figure class="image-container">
                 <img class="image" src="avatar.jpg" alt="Фото профілю" id="image">
-            </div>
+            </figure>
 
             <div class="main-data">
                 <div class="element-name">
@@ -31,7 +32,7 @@
                 </div>
             </div>
 
-            <div class="extra-data">
+            <footer class="extra-data">
                 <div class="element-tg">
                     <label for="tg">Нік Telegram:</label><input type="text" id="tg" placeholder="нік телеграм">
                 </div>
@@ -39,18 +40,18 @@
                     <label for="phone">Телефон:</label><input type="text" id="phone" required placeholder="номер телефону">
                 </div>
                 <div class="element-github">
-                    <label for="fathername">Github:</label><input type="text" id="fathername" placeholder="github нікнейм">
+                    <label for="github">Github:</label><input type="text" id="github" placeholder="github нікнейм">
                 </div>
-            </div>
-        </div>
+            </footer>
+        </section>
 
-        <div class="right-column">
+        <section class="right-column">
             <div class="element-error">
-                <p class="error-text">Error: </p>
+                <h1 class="error-text">Error: </h1>
             </div>
 
-            <div class="container-rightcol">
-                <div class="left-pidcolumn">
+            <section class="container-rightcol">
+                <section class="left-pidcolumn">
                     <div class="element-country">
                         <label class="label-country" for="country">Країна:</label>
                         <select class="options-country" id="country">
@@ -71,9 +72,9 @@
                     <div class="element-zp">
                         <label class="label-zp" for="zp">Бажана з/п</label><input type="number" id="zp" required>
                     </div>
-                </div>
+                </section>
 
-                <div class="right-pidcolumn">
+                <section class="right-pidcolumn">
                     <div class="element-city">
                         <label class="label-city" for="city">Місто:</label><input type="text" id="city" required>
                     </div>
@@ -85,20 +86,20 @@
                     <div class="element-posada">
                         <label class="label-posada" for="posada">Бажана посада</label><input type="text" id="posada" required>
                     </div>
-                </div>
-            </div>
+                </section>
+            </section>
 
             
-            <div class="element-resume">
+            <aside class="element-resume">
                 <label class="label-zp" for="summary">Резюме</label>
                 <input type="file" id="summary" required>
-            </div>
+            </aside>
 
-            <div class="buttons-edit">
+            <nav class="buttons-edit">
                 <button>Зберегти</button>
                 <button>Редагувати дані</button>
-            </div>
-        </div>
-    </div>
+            </nav>
+        </section>
+    </main>
 </body>
 </html>

@@ -23,7 +23,7 @@
 }
 
 /* content-left */ 
-.buttons {
+.buttons-navig {
     display: flex;
     justify-content: center;
     gap: 10px;
